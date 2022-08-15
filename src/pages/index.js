@@ -2,7 +2,7 @@ import {nanoid} from 'nanoid';
 import Head from 'next/head';
 import {useState} from 'react';
 
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 import Layout from '../components/Layout';
 import useFetch from '../hooks/useFetch';
 import useStore from '../hooks/useStore';
