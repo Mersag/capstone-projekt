@@ -2,19 +2,22 @@ export const db = [
 	{
 		id: 0,
 		name: 'Cobra',
-		sanskritName: 'bhujaṅgāsana',
+		sanscritName: 'bhujaṅgāsana',
 		effects: ['körperlich', 'geistig', 'energetisch', 'chakra'],
+		about: 'Übung beschreiben',
 	},
 	{
 		id: 1,
 		name: 'Schulterstand',
-		sanskritName: 'Sarvangasana',
+		sanscritName: 'Sarvangasana',
 		effects: ['körperlich', 'geistig', 'energetisch', 'chakra'],
+		about: 'Übung beschreiben',
 	},
 	{
 		id: 2,
 		name: 'Fisch',
-		sanskritName: 'Matyasana',
+		sanscritName: 'Matyasana',
 		effects: ['körperlich', 'geistig', 'energetisch', 'chakra'],
+		about: 'Übung beschreiben',
 	},
 ];
