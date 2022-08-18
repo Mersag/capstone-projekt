@@ -17,7 +17,12 @@ export const db = [
 		id: 2,
 		name: 'Fisch',
 		sanscritName: 'Matyasana',
-		effects: ['körperlich', 'geistig', 'energetisch', 'chakra'],
+		effects: [
+			{effect: 'körperlich', text: 'harmonisierend ,Schlidrüse , Spannung lösend'},
+			{effect: 'energetisch', text: 'Aktivirend,öffnent'},
+			{effect: 'geistig', text: 'Verleiht frieden '},
+			{effect: 'muskeln', text: 'Brustmuskel, Halsmuskel'},
+		],
 		about: 'Übung beschreiben',
 	},
 ];
