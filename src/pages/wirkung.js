@@ -11,6 +11,9 @@ export default function WirkungPage() {
 	useEffect(() => {
 		setId(router.query.keyword);
 	}, [router.query]);
+
+	const entry = db.find(entry => entry.id === Number(ids));
+	console.log(entry);
 	return (
 		<Layout>
 			<Head>
@@ -19,19 +22,16 @@ export default function WirkungPage() {
 			</Head>
 			<h1>Wirkung</h1>
 			<div>
-				{db
-					.filter(entry => entry.id === Number(ids))
-					.map(entry => {
-						return (
-							<ul key={entry.name}>
-								{entry.wirkung.map(wirkung => (
-									<ul key={wirkung}>{wirkung.wirkung}</ul>
-								))}
-							</ul>
-						);
-					})}
-				<button>auswählen</button>
+				<ul>
+					{entry.wirkung.map(wirkung => (
+						<li key={wirkung.wirkung}>
+							<h2>{wirkung.wirkung}:</h2>
+							{wirkung.text}
+						</li>
+					))}
+				</ul>
 			</div>
+			<button onClick>auswählen</button>
 		</Layout>
 	);
 }
