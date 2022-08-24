@@ -1,12 +1,10 @@
 import {useRouter} from 'next/router';
 
-const Header = () => {
+export default function Header() {
 	const router = useRouter();
 	return (
 		<header>
 			<button onClick={() => router.back()}>zurück</button>
-			<nav></nav>
 		</header>
 	);
-};
-export default Header;
+}

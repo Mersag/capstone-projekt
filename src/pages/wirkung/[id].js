@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import {useRouter} from 'next/router';
 
-import Layout from '../components/Layout';
-import {db} from '../db';
+import Layout from '../../components/Layout';
+import {db} from '../../db';
 
 export default function WirkungPage() {
 	const router = useRouter();
-	const {id_} = router.query;
-	const entry = db.find(entry => entry.id === Number(id_));
+	const {id} = router.query;
+	const entry = db.find(entry => entry.id === Number(id));
 	console.log(entry);
 	return (
 		<Layout>
