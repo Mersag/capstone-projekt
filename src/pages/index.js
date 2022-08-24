@@ -4,8 +4,6 @@ import Card from '../components/Card';
 import Layout from '../components/Layout';
 import {db} from '../db';
 
-//import Effects from './effects';
-
 export default function HomePage() {
 	return (
 		<Layout>

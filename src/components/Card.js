@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 function Card({exercise}) {
-	console.log(exercise.id);
 	return (
 		<article>
 			<h2>{exercise.name}</h2>
