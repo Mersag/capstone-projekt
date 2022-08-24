@@ -1,24 +1,19 @@
 import Head from 'next/head';
 import {useRouter} from 'next/router';
-import {useEffect, useState} from 'react';
 
 import Layout from '../components/Layout';
 import {db} from '../db';
 
 export default function WirkungPage() {
 	const router = useRouter();
-	const [ids, setId] = useState(0);
-	useEffect(() => {
-		setId(router.query.keyword);
-	}, [router.query]);
-
-	const entry = db.find(entry => entry.id === Number(ids));
+	const {id_} = router.query;
+	const entry = db.find(entry => entry.id === Number(id_));
 	console.log(entry);
 	return (
 		<Layout>
 			<Head>
 				<title key="title">Wirkung</title>
-				<meta key="description" name="description" content="Wirkung" />
+				<meta key="description" name="description" content="wirkung" />
 			</Head>
 			<h1>Wirkung</h1>
 			<div>
@@ -31,7 +26,6 @@ export default function WirkungPage() {
 					))}
 				</ul>
 			</div>
-			<button onClick>auswählen</button>
 		</Layout>
 	);
 }

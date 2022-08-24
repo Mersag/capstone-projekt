@@ -10,7 +10,7 @@ export default function HomePage() {
 	return (
 		<Layout>
 			<Head>
-				<title key="title"></title>
+				<title key="Yoga App"></title>
 				<meta key="description" name="description" content="This is my project" />
 			</Head>
 
