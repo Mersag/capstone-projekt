@@ -9,6 +9,11 @@ export default function WirkungPage() {
 	const {id} = router.query;
 	const entry = db.find(entry => entry.id === Number(id));
 	console.log(entry);
+
+	if (!entry) {
+		return;
+	}
+
 	return (
 		<Layout>
 			<Head>
