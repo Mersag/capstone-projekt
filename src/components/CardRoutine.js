@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-function Card({exercise}) {
+function CardRoutine({exercise}) {
 	return (
 		<article>
 			<h2>{exercise.name}</h2>
@@ -15,4 +15,4 @@ function Card({exercise}) {
 	);
 }
 
-export default Card;
+export default CardRoutine;

@@ -3,8 +3,10 @@ import {useRouter} from 'next/router';
 
 import Layout from '../../components/Layout';
 import {db} from '../../db';
+import useStore from '../../hooks/useStore';
 
 export default function WirkungPage() {
+	const addRoutine = useStore(state => state.addRoutine);
 	const router = useRouter();
 	const {id} = router.query;
 	const entry = db.find(entry => entry.id === Number(id));
@@ -31,6 +33,15 @@ export default function WirkungPage() {
 					))}
 				</ul>
 			</div>
+
+			<button
+				onClick={() => {
+					addRoutine(entry.id);
+				}}
+				type="button"
+			>
+				add
+			</button>
 		</Layout>
 	);
 }
