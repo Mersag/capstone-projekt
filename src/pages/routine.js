@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Card from '../components/Card';
+import CardRoutine from '../components/CardRoutine';
 import Layout from '../components/Layout';
 import {db} from '../db';
 import useStore from '../hooks/useStore';
@@ -18,7 +18,7 @@ export default function Routine() {
 			{db
 				.filter(exercise => routine.includes(exercise.id))
 				.map(exercise => (
-					<Card key={exercise.id} exercise={exercise} />
+					<CardRoutine key={exercise.id} exercise={exercise} />
 				))}
 		</Layout>
 	);

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Card from '../components/Card';
+import CardHome from '../components/CardHome';
 import Layout from '../components/Layout';
 import {db} from '../db';
 
@@ -17,7 +17,7 @@ export default function HomePage() {
 			<h1>Asanas</h1>
 
 			{db.map(exercise => {
-				return <Card key={exercise.id} exercise={exercise} />;
+				return <CardHome key={exercise.id} exercise={exercise} />;
 			})}
 		</Layout>
 	);
