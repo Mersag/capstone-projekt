@@ -9,7 +9,7 @@ function CardHome({exercise}) {
 			<h2>{exercise.name}</h2>
 			<h3>{exercise.sanscritName}</h3>
 			<p>{exercise.about}</p>
-			<Link href={{pathname: '/wirkung', query: {keyword: exercise.id}}}>
+			<Link href={`/wirkung/${exercise.id}`}>
 				<a>wirkung</a>
 			</Link>
 			<button

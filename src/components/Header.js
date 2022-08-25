@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 
-const Header = () => {
+export default function Header() {
 	const router = useRouter();
 	return (
 		<header>
@@ -16,5 +16,4 @@ const Header = () => {
 			<button onClick={() => router.back()}>zurück</button>
 		</header>
 	);
-};
-export default Header;
+}

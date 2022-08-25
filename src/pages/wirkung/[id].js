@@ -1,26 +1,26 @@
 import Head from 'next/head';
 import {useRouter} from 'next/router';
-import {useEffect, useState} from 'react';
 
-import Layout from '../components/Layout';
-import {db} from '../db';
-import useStore from '../hooks/useStore';
+import Layout from '../../components/Layout';
+import {db} from '../../db';
+import useStore from '../../hooks/useStore';
 
 export default function WirkungPage() {
 	const addRoutine = useStore(state => state.addRoutine);
 	const router = useRouter();
-	const [ids, setId] = useState(0);
-	useEffect(() => {
-		setId(router.query.keyword);
-	}, [router.query]);
-
-	const entry = db.find(entry => entry.id === Number(ids));
+	const {id} = router.query;
+	const entry = db.find(entry => entry.id === Number(id));
 	console.log(entry);
+
+	if (!entry) {
+		return;
+	}
+
 	return (
 		<Layout>
 			<Head>
 				<title key="title">Wirkung</title>
-				<meta key="description" name="description" content="Wirkung" />
+				<meta key="description" name="description" content="wirkung" />
 			</Head>
 			<h1>Wirkung</h1>
 			<div>
@@ -33,6 +33,7 @@ export default function WirkungPage() {
 					))}
 				</ul>
 			</div>
+
 			<button
 				onClick={() => {
 					addRoutine(entry.id);
