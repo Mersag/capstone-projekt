@@ -10,7 +10,6 @@ export default function WirkungPage() {
 	const router = useRouter();
 	const {id} = router.query;
 	const entry = db.find(entry => entry.id === Number(id));
-	console.log(entry);
 
 	if (!entry) {
 		return;
@@ -36,11 +35,11 @@ export default function WirkungPage() {
 
 			<button
 				onClick={() => {
-					addRoutine(entry.id);
+					addRoutine(entry);
 				}}
 				type="button"
 			>
-				add
+				add to Routine
 			</button>
 		</Layout>
 	);

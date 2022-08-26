@@ -2,9 +2,11 @@ import Head from 'next/head';
 
 import CardHome from '../components/CardHome';
 import Layout from '../components/Layout';
-import {db} from '../db';
+import useStore from '../hooks/useStore';
 
 export default function HomePage() {
+	const exercises = useStore(state => state.exercises);
+	console.log(exercises);
 	return (
 		<Layout>
 			<Head>
@@ -14,7 +16,7 @@ export default function HomePage() {
 
 			<h1>Asanas</h1>
 
-			{db.map(exercise => {
+			{exercises?.map(exercise => {
 				return <CardHome key={exercise.id} exercise={exercise} />;
 			})}
 		</Layout>

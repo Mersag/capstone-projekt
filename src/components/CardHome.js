@@ -14,11 +14,11 @@ function CardHome({exercise}) {
 			</Link>
 			<button
 				onClick={() => {
-					addRoutine(exercise.id);
+					addRoutine(exercise);
 				}}
 				type="button"
 			>
-				add
+				add to Routine
 			</button>
 			<hr />
 		</article>
