@@ -4,7 +4,7 @@ import {db} from '../db';
 
 const useStore = create(set => ({
 	routine: [],
-	exercises: [...db],
+	exercises: db,
 
 	addRoutine: newRoutine => {
 		set(state => {

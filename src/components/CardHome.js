@@ -3,6 +3,7 @@ import Link from 'next/link';
 import useStore from '../hooks/useStore';
 
 function CardHome({exercise}) {
+	const routine = useStore(state => state.routine);
 	const addRoutine = useStore(state => state.addRoutine);
 	return (
 		<article>
@@ -13,6 +14,9 @@ function CardHome({exercise}) {
 				<a>wirkung</a>
 			</Link>
 			<button
+				disabled={
+					routine.filter(routine => routine.id === exercise.id).length > 0 ? true : false
+				}
 				onClick={() => {
 					addRoutine(exercise);
 				}}

@@ -6,6 +6,7 @@ import {db} from '../../db';
 import useStore from '../../hooks/useStore';
 
 export default function WirkungPage() {
+	const routine = useStore(state => state.routine);
 	const addRoutine = useStore(state => state.addRoutine);
 	const router = useRouter();
 	const {id} = router.query;
@@ -34,6 +35,9 @@ export default function WirkungPage() {
 			</div>
 
 			<button
+				disabled={
+					routine.filter(routine => routine.id === Number(id)).length > 0 ? true : false
+				}
 				onClick={() => {
 					addRoutine(entry);
 				}}

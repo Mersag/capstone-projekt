@@ -14,7 +14,7 @@ export default function Routine() {
 			</Head>
 			<h1>Routine</h1>
 			{routine.map(exercise => (
-				<CardRoutine key={exercise.id} exercise={exercise} id={exercise.id} />
+				<CardRoutine key={exercise.id} exercise={exercise} />
 			))}
 		</Layout>
 	);
