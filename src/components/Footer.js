@@ -7,8 +7,8 @@ const StyledFooter = styled.footer`
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 40px;
-	background: blue;
+	height: 60px;
+	background: #f01878;
 `;
 
 const StyledNav = styled.nav`
@@ -19,15 +19,15 @@ const StyledNav = styled.nav`
 `;
 
 const StyledLink = styled.a`
-	padding: 0 100px;
+	padding: 0 200px;
 	background: ${({active}) => {
-		return active ? 'blue' : 'transparent';
+		return active ? '#781830' : 'transparent';
 	}};
 	color: white;
 	text-decoration: none;
 
 	&:hover {
-		color: black;
+		color: #4878ff;
 	}
 
 	&:visited {
