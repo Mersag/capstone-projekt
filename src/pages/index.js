@@ -6,7 +6,6 @@ import useStore from '../hooks/useStore';
 
 export default function HomePage() {
 	const exercises = useStore(state => state.exercises);
-	console.log(exercises);
 	return (
 		<Layout>
 			<Head>
