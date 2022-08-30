@@ -6,7 +6,7 @@ const StyledFooter = styled.footer`
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	background-color: #f01878;
+	background-color: #83c5be;
 `;
 
 const StyledNav = styled.nav`
@@ -25,7 +25,7 @@ const StyledLink = styled.a`
 	text-decoration: none;
 
 	&:hover {
-		color: #4878ff;
+		color: white;
 	}
 
 	&:visited {
