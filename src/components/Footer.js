@@ -5,21 +5,19 @@ import styled from 'styled-components';
 const StyledFooter = styled.footer`
 	position: fixed;
 	bottom: 0;
-	left: 0;
 	width: 100%;
-	height: 60px;
-	background: #f01878;
+	background-color: #f01878;
 `;
 
 const StyledNav = styled.nav`
 	display: flex;
+	justify-content: space-evenly;
 	padding: 15px;
-	background-color: #f01878;
 	color: white;
 `;
 
 const StyledLink = styled.a`
-	padding: 0 200px;
+	padding: 5px 20px;
 	background: ${({active}) => {
 		return active ? '#781830' : 'transparent';
 	}};
@@ -41,14 +39,10 @@ export default function Footer() {
 		<StyledFooter>
 			<StyledNav>
 				<Link href="/">
-					<StyledLink active={router.asPath === '/' ? true : false}>
-						Asana Home
-					</StyledLink>
+					<StyledLink active={router.asPath === '/'}>Asana Home</StyledLink>
 				</Link>
 				<Link href="/routine">
-					<StyledLink active={router.asPath === '/routine' ? true : false}>
-						Asana Routine
-					</StyledLink>
+					<StyledLink active={router.asPath === '/routine'}>Asana Routine</StyledLink>
 				</Link>
 			</StyledNav>
 		</StyledFooter>

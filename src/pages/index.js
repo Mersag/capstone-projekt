@@ -15,7 +15,7 @@ export default function HomePage() {
 
 			<h1>Asanas</h1>
 
-			{exercises?.map(exercise => {
+			{exercises.map(exercise => {
 				return <CardHome key={exercise.id} exercise={exercise} />;
 			})}
 		</Layout>

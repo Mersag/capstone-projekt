@@ -14,9 +14,7 @@ function CardHome({exercise}) {
 				<a>wirkung</a>
 			</Link>
 			<button
-				disabled={
-					routine.filter(routine => routine.id === exercise.id).length > 0 ? true : false
-				}
+				disabled={routine.filter(routine => routine.id === exercise.id).length}
 				onClick={() => {
 					addRoutine(exercise);
 				}}

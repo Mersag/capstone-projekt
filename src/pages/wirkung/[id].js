@@ -35,9 +35,7 @@ export default function WirkungPage() {
 			</div>
 
 			<button
-				disabled={
-					routine.filter(routine => routine.id === Number(id)).length > 0 ? true : false
-				}
+				disabled={routine.filter(routine => routine.id === Number(id)).length}
 				onClick={() => {
 					addRoutine(entry);
 				}}
