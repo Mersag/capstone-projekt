@@ -1,6 +1,9 @@
 import Link from 'next/link';
 
+import useStore from '../hooks/useStore';
+
 function CardRoutine({exercise}) {
+	const deleteRoutine = useStore(state => state.deleteRoutine);
 	return (
 		<article>
 			<h2>{exercise.name}</h2>
@@ -9,7 +12,13 @@ function CardRoutine({exercise}) {
 			<Link href={`/wirkung/${exercise.id}`}>
 				<a>wirkung</a>
 			</Link>
-
+			<button
+				onClick={() => {
+					deleteRoutine(exercise.id);
+				}}
+			>
+				delete routine
+			</button>
 			<hr />
 		</article>
 	);
