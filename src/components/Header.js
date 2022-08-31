@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-	background-color: #83c5be;
 	padding: 30px;
-	font
+	background-color: #83c5be;
 `;
 
 export default function Header() {
