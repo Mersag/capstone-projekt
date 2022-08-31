@@ -4,6 +4,7 @@ import {useRouter} from 'next/router';
 import styled from 'styled-components';
 
 import icon1 from './images/yoga_icon_126356.png';
+import icon2 from './images/yoga_icon_126445.png';
 
 const StyledFooter = styled.footer`
 	position: fixed;
@@ -21,13 +22,15 @@ const StyledNav = styled.nav`
 
 const StyledLink = styled.div`
 	display: flex;
-	padding: 5px 20px;
+	align-items: center;
+	padding: 5px 15px;
+	border-radius: 3px;
 	background-color: #006d77;
 	color: white;
 	text-decoration: none;
 
 	&:hover {
-		color: #e29578;
+		background-color: #008c99;
 	}
 
 	&:visited {
@@ -43,14 +46,14 @@ export default function Footer() {
 			<StyledNav>
 				<Link href="/">
 					<StyledLink>
-						<a active={router.asPath === '/'}>
-							<Image src={icon1} alt={'butterfly'} width={40} height={40}></Image>
-							Asana Home
-						</a>
+						<Image src={icon1} alt="butterfly" width={40} height={40}></Image>
+						<a active={router.asPath === '/'}>Home</a>
 					</StyledLink>
 				</Link>
 				<Link href="/routine">
-					<StyledLink active={router.asPath === '/routine'}>Asana Routine</StyledLink>
+					<StyledLink active={router.asPath === '/routine'}>
+						<Image src={icon2} alt="dog" width={40} height={40}></Image>Routine
+					</StyledLink>
 				</Link>
 			</StyledNav>
 		</StyledFooter>
