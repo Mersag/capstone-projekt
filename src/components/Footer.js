@@ -16,14 +16,14 @@ const StyledFooter = styled.footer`
 const StyledNav = styled.nav`
 	display: flex;
 	justify-content: space-evenly;
-	padding: 15px;
+	padding: 10px;
 	color: white;
 `;
 
 const StyledLink = styled.div`
 	display: flex;
 	align-items: center;
-	padding: 5px 15px;
+	padding: 2px 15px;
 	border-radius: 3px;
 	background-color: #006d77;
 	color: white;

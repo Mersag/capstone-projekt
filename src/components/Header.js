@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-	padding: 30px;
+	padding: 20px;
 	background-color: #83c5be;
 	color: white;
 `;

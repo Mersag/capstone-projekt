@@ -2,6 +2,10 @@ import Link from 'next/link';
 
 import useStore from '../hooks/useStore';
 
+//const Styledh2 = styled.h2`
+//justify-content: center;
+//`;
+
 function CardHome({exercise}) {
 	const routine = useStore(state => state.routine);
 	const addRoutine = useStore(state => state.addRoutine);
@@ -13,6 +17,7 @@ function CardHome({exercise}) {
 			<Link href={`/wirkung/${exercise.id}`}>
 				<a>wirkung</a>
 			</Link>
+
 			<button
 				disabled={routine.filter(routine => routine.id === exercise.id).length}
 				onClick={() => {
