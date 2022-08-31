@@ -12,9 +12,8 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	body {
-		color:#006D77;
-		font-family:
 		margin: 0;
+		color:#006D77;
 		font-size: 1rem;
 	}
 
