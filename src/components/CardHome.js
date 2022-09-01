@@ -2,10 +2,6 @@ import Link from 'next/link';
 
 import useStore from '../hooks/useStore';
 
-//const Styledh2 = styled.h2`
-//justify-content: center;
-//`;
-
 function CardHome({exercise}) {
 	const routine = useStore(state => state.routine);
 	const addRoutine = useStore(state => state.addRoutine);
