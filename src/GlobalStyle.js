@@ -24,7 +24,6 @@ export const GlobalStyle = createGlobalStyle`
 	html {
 		font-size: 16px;
 	}
-
 	body {
 		margin:0;
 		padding-bottom:100px;
