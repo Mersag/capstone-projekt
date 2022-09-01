@@ -29,6 +29,10 @@ const StyledLink = styled.div`
 	color: white;
 	text-decoration: none;
 
+	&:active {
+		color: ${({active = true}) => (active ? 'white' : '#ddbea8')};
+		cursor: pointer;
+	}
 	&:hover {
 		background-color: #008c99;
 	}
@@ -45,9 +49,9 @@ export default function Footer() {
 		<StyledFooter>
 			<StyledNav>
 				<Link href="/">
-					<StyledLink>
+					<StyledLink active={router.asPath === '/index'}>
 						<Image src={icon1} alt="butterfly" width={40} height={40}></Image>
-						<a active={router.asPath === '/'}>Home</a>
+						<a active={router.asPath === '/index'}>Home</a>
 					</StyledLink>
 				</Link>
 				<Link href="/routine">
