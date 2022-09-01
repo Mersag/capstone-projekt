@@ -26,8 +26,8 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	body {
-		margin: 0;
-		color:#006D77;
+		margin:0 ;
+		color:#785c5b;
 		font-family: "poppins", sans-serif;
 		font-size: 1rem;
 	}
