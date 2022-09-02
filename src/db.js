@@ -1,8 +1,11 @@
 import BowPose from './components/images/Bow Pose.png';
 import Cobra from './components/images/Cobra.png';
+import Crow from './components/images/Crow.png';
 import Fish from './components/images/Fish.png';
+import HeadStand from './components/images/Head Stand.png';
 import PlowPose from './components/images/Plow Pose.png';
 import ShoulderStand from './components/images/Shoulder Stand.png';
+import TrianglePose from './components/images/Triangle Pose.png';
 
 export const db = [
 	{
@@ -177,6 +180,8 @@ export const db = [
 	},
 	{
 		id: 8,
+		image: Crow,
+		alt: 'Krähe',
 		name: 'Krähe',
 		sanscritName: 'मयूरासन mayūrāsana',
 		about: 'In der Hocke platzierst du die Hände mit gespreizten Fingern schulterbreit auf dem Boden. Dein Gesäß geht nach oben, sodass du deine Knie auf den Oberarmen ablegen kannst. Nun verlagere immer mehr Gewicht auf die Hände, komme auf die Zehenspitzen, um dann die Füße ganz vom Boden zu lösen.Um besser das Gleichgewicht zu halten, gib auch Gewicht auf die Fingerspitzen und fixiere mit dem Blick einen Punkt vor dir. Die Zehenspitzen kannst du zusammenbringen, um noch mehr Stabilität aufzubauen. Halte die Position einige Atemzüge und setze dann die Füße wieder auf dem Boden ab.',
@@ -217,6 +222,8 @@ export const db = [
 	},
 	{
 		id: 10,
+		image: TrianglePose,
+		alt: 'Dreieck',
 		name: 'Dreieck',
 		sanscritName: 'त्रिकोणासन trikoṇāsana',
 		about: 'Ausgangsposition ist eine gegrätschte Standhaltung, so dass die Knöchel unter den Handgelenken der ausgestreckten Arme sind. Die Füße sind parallel zueinander. Halte die Arme an den Seiten neben den Beinen am Körper angelegt.Atme ein, hebe den rechten Arm hoch. Atme aus und beuge den Rumpf nach links. Halte dabei den Arm am Ohr. Atme 2-3 Mal tief ein und aus. Spüre die Dehnung auf der rechten Körperseite',
@@ -237,6 +244,8 @@ export const db = [
 	},
 	{
 		id: 11,
+		image: HeadStand,
+		alt: 'Kopfstand',
 		name: 'Kopfstand',
 		sanscritName: 'शीर्षासन śīrṣāsana',
 		about: 'Verschränke die Finger und schaffe eine feste Basis über die Unterarme. Nun strecke die Beine und schiebe dein Gesäß nach oben. Der Rücken bleibt lang und die Beine sind aktiv gestreckt. Atme ein und schiebe den Kopf vor die Faust, der Oberkörper kommt parallel zum Boden, wobei die Beine gestreckt bleiben',
