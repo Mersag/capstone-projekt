@@ -14,10 +14,6 @@ const StyledNavLink = styled.a`
 			background: #785c5b;
 			color: white;
 		`};
-
-	&:hover {
-		background-color: #008c99;
-	}
 `;
 
 export default StyledNavLink;
