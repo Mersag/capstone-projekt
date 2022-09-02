@@ -1,6 +1,14 @@
+import BowPose from './components/images/Bow Pose.png';
+import Cobra from './components/images/Cobra.png';
+import Fish from './components/images/Fish.png';
+import PlowPose from './components/images/Plow Pose.png';
+import ShoulderStand from './components/images/Shoulder Stand.png';
+
 export const db = [
 	{
 		id: 0,
+		image: Cobra,
+		alt: 'Cobra',
 		name: 'Cobra',
 		sanscritName: 'भुजङ्गासन bhujaṅgāsana',
 		about: 'Kobra oder auch Sphinx, ahmt die aufgerichtete Haltung einer Schlange nach. Bei dieser Yoga-Übung liegen deine Beine und deine Hüfte (in der Regel) auf dem Boden, während dein Oberkörper aufgerichtet ist.',
@@ -21,6 +29,8 @@ export const db = [
 	},
 	{
 		id: 1,
+		image: ShoulderStand,
+		alt: 'SchulterStand',
 		name: 'Schulterstand',
 		sanscritName: 'सर्वाङ्गासन sarvāṅgāsana',
 		about: 'Ausgehend von der Rückenentspannungslage bringst du die Beine zusammen, die Arme liegen neben dem Körper mit den Handinnenflächen nach unten. Mit der Einatmung hebst du beide Beine soweit wie möglich in eine senkrechte Position nach oben. Den Rücken unterstützt du mit den Händen.',
@@ -41,6 +51,8 @@ export const db = [
 	},
 	{
 		id: 2,
+		image: Fish,
+		alt: 'Fisch',
 		name: 'Fisch',
 		sanscritName: 'मत्स्यासन matsyāsana',
 		about: 'Dein Kinn ist auf dein Brustbein geneigt, während du dich mit Armkraft und einer Einatmung in eine Rückbeuge stemmst. Dein Gewicht lastet nun auf den Unterarmen. zuletzt lässt du deinen Kopf mit einer Ausatmung sanft in den Nacken sinken.',
@@ -61,6 +73,8 @@ export const db = [
 	},
 	{
 		id: 3,
+		image: PlowPose,
+		alt: 'Pflug',
 		name: 'Pflug',
 		sanscritName: 'हलासन halāsana',
 		about: 'Dein Kinn ist auf dein Brustbein geneigt, während du dich mit Armkraft und einer Einatmung in eine Rückbeuge stemmst. Dein Gewicht lastet nun auf den Unterarmen. zuletzt lässt du deinen Kopf mit einer Ausatmung sanft in den Nacken sinken.',
@@ -121,6 +135,8 @@ export const db = [
 	},
 	{
 		id: 6,
+		image: BowPose,
+		alt: 'Bogen',
 		name: 'Bogen',
 		sanscritName: 'धनुरासन dhanurāsana',
 		about: 'Bei dieser öffnenden Yoga-Übung Dhanurasana (Sanskrit: धनुरासन) liegst du auf dem Bauch, während deine Hände deine Fußgelenke greifen und der Brustkorb nach oben gebogen wird. Dadurch streckst du deine Wirbelsäule, entspannst und stärkst deine oberen Rückenmuskeln und deine Schultern, gleichzeitig stählst du Arme und Oberschenkel.',
