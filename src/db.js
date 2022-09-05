@@ -89,9 +89,9 @@ export const db = [
 	},
 	{
 		id: 4,
-		image: '/images/standing forward fold.png',
-		alt: 'Vorwärtsbeuge',
-		name: 'Vorwärtsbeuge',
+		image: '/images/seated forward bend.png',
+		alt: 'Sitzende Vorwärtsbeuge',
+		name: 'Sitzende Vorwärtsbeuge',
 		sanscritName: 'पश्चिमोत्तानासन paścimottānāsana',
 		about: 'Lege im Langsitz die Hände auf die Oberschenkel, gleite dabei immer weiter nach vorne unten, hin zu den Schienbeinen und vielleicht erreichst du ja sogar deine Füße. Lege Bauch und Brust auf die Beine, soweit du eben kommst. Wenn du nicht so flexibel bist, gehst du eben nicht so tief nach unten.Der untere Rücken bleibt dabei gerade.',
 		wirkung: [
@@ -111,7 +111,8 @@ export const db = [
 	},
 	{
 		id: 5,
-		//image: '/images/.png',
+		image: '/images/full locust pose.png',
+		alt: 'Heuschrecke',
 		name: 'Heuschrecke',
 		sanscritName: 'शलभासन śalabhāsana',
 		about: 'Ausgangsposition ist die Bauchlage. Bringe deine Arme vor deinem Rumpf zusammen, die Hände sind gefaltet, in Fäusten oder liegen flach auf dem Boden - unter oder neben dem Körper. Die kleinen Finger liegen dabei nebeneinander. Du solltest dich in dieser Haltung mit den Armen gut abstützen können.Mit der Einatmung baust du Körperspannung auf und hebst die Beine soweit wie möglich nach oben. Atme tief und gleichmäßig. Halte die Heuschrecke so lange wie möglich.Mit der Ausatmung legst du die Beine wieder ab und spürst in der Bauchentspannungslage der Wirkung der Asana nach.',
@@ -197,7 +198,8 @@ export const db = [
 	},
 	{
 		id: 9,
-		image: '/images/standing forward.png',
+		image: '/images/standing forward fold.png',
+		alt: 'Stehende Vorwärtsbeuge',
 		name: 'Stehende Vorwärtsbeuge',
 		sanscritName: 'पादहस्तासन pāda-hastāsana',
 		about: 'Ausgangsposition ist die Bergstellung (Tadasana). Von hier aus hebe mit der nächsten Einatmung die Arme weit nach oben und strecke dich mit der Ausatmung weit nach vorne unten, bis die Hände oder die Fingerspitzen auf dem Boden ankommen. Wenn dir das nicht möglich ist, kannst du auch etwas deine Knie beugen, um die Hände flach neben den Füßen abzulegen.',
@@ -249,6 +251,28 @@ export const db = [
 			{wirkung: 'körperlich', text: 'harmonisierend ,Schlidrüse , Spannung lösend'},
 			{wirkung: 'energetisch', text: 'Aktivirend,öffnent'},
 			{wirkung: 'geistig', text: 'Verleiht frieden '},
+		],
+	},
+	{
+		id: 12,
+		image: '/images/chaturanga.png',
+		alt: 'Yoga Liegestütze',
+		name: 'Yoga Liegestütze',
+		sanscritName: 'चतुरङ्गदण्डासन catur-aṅga-daṇḍāsana',
+		about: 'Als Ausgangsposition bietet sich der Vierfüßlerstand an. Die Hände befinden sich dabei unter den Schultern und die Knie unter den Hüften. Löse nun langsam die Knie vom Boden und baue immer mehr Körperspannung auf, bis die Knie ganz gestreckt sind. Bauchmuskeln, Gesäß und Oberschenkel sind angespannt. Der Scheitelpunkt strebt nach vorne und die Fersen schieben nach hinten. Du kannst in dieser Haltung die gesamte Muskulatur des Körpers und auch die Beckenbodenmuskulatur gut trainieren. Die Atmung fließt trotz der Anstrengung ruhig und gleichmäßig und sollte nicht ins Stocken geraten.',
+		wirkung: [
+			{
+				wirkung: 'körperlich',
+				text: 'Der Stütz stärkt das gesamte Muskelkorsett. Auch die Tiefenmuskulatur wird beansprucht, was besonders zur Stabilisation der Wirbelsäule und der Gelenke beiträgt. Durch die starke Aktivierung entstehen auch positive Effekte auf der Ebene des Stoffwechsels und der Hormone, sodass zum Beispiel die Knochendichte positiv beeinflusst wird.',
+			},
+			{
+				wirkung: 'energetisch',
+				text: 'Der Stütz ist eine stark energetisierende Asana, die das Prana im ganzen Körper zum Fließen bringt. Angesprochen wird besonders das Muladhara Chakra.',
+			},
+			{
+				wirkung: 'geistig',
+				text: 'Chaturanga Dandasana gibt dir ein ein Gefühl von geistiger Klarheit und vertreibt Müdigkeit.',
+			},
 		],
 	},
 ];
