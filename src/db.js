@@ -2,6 +2,8 @@ export const db = [
 	{
 		id: 0,
 		image: '/images/cobra.png',
+		width: '699',
+		height: '455',
 		alt: 'Cobra',
 		name: 'Cobra',
 		sanscritName: 'भुजङ्गासन bhujaṅgāsana',
@@ -24,6 +26,8 @@ export const db = [
 	{
 		id: 1,
 		image: '/images/shoulder stand.png',
+		width: '367',
+		height: '805',
 		alt: 'SchulterStand',
 		name: 'Schulterstand',
 		sanscritName: 'सर्वाङ्गासन sarvāṅgāsana',
@@ -46,6 +50,8 @@ export const db = [
 	{
 		id: 2,
 		image: '/images/fish.png',
+		width: '729',
+		height: '189',
 		alt: 'Fisch',
 		name: 'Fisch',
 		sanscritName: 'मत्स्यासन matsyāsana',
@@ -68,6 +74,8 @@ export const db = [
 	{
 		id: 3,
 		image: '/images/plow pose.png',
+		width: '679',
+		height: '461',
 		alt: 'Pflug',
 		name: 'Pflug',
 		sanscritName: 'हलासन halāsana',
@@ -90,6 +98,8 @@ export const db = [
 	{
 		id: 4,
 		image: '/images/seated forward bend.png',
+		width: '665',
+		height: '495',
 		alt: 'Sitzende Vorwärtsbeuge',
 		name: 'Sitzende Vorwärtsbeuge',
 		sanscritName: 'पश्चिमोत्तानासन paścimottānāsana',
@@ -112,6 +122,8 @@ export const db = [
 	{
 		id: 5,
 		image: '/images/full locust pose.png',
+		width: '729',
+		height: '189',
 		alt: 'Heuschrecke',
 		name: 'Heuschrecke',
 		sanscritName: 'शलभासन śalabhāsana',
@@ -134,6 +146,8 @@ export const db = [
 	{
 		id: 6,
 		image: '/images/bowpose.png',
+		width: '673',
+		height: '593',
 		alt: 'Bogen',
 		name: 'Bogen',
 		sanscritName: 'धनुरासन dhanurāsana',
@@ -156,6 +170,8 @@ export const db = [
 	{
 		id: 7,
 		image: '/images/seated twist.png',
+		width: '659',
+		height: '753',
 		name: 'Drehsitz',
 		sanscritName: 'अर्धमत्स्येन्द्रासन ardhamatsyendrāsana',
 		about: 'Ausgehend vom Fersensitz setzt du dein Gesäß links neben der Hüfte ab, den rechten Fuß setzt du neben dem linken Knie auf und mit dem linken Arm greifst du um das rechte Knie. Hier kannst du dich noch einmal an deinem Knie aufrichten und mit der nächsten Einatmung den rechten Arm weit nach oben ausstrecken.Mit der Ausatmung den Oberkörper um die eigene Achse nach rechts drehen und die Hand auf dem Boden ablegen. Auf der hinteren Hand ist kein Gewicht. Wenn du schon stabil in der Position sitzt, lege den rechten Unterarm in den Rücken.',
@@ -177,6 +193,8 @@ export const db = [
 	{
 		id: 8,
 		image: '/images/crow.png',
+		width: '687',
+		height: '631',
 		alt: 'Krähe',
 		name: 'Krähe',
 		sanscritName: 'मयूरासन mayūrāsana',
@@ -199,6 +217,8 @@ export const db = [
 	{
 		id: 9,
 		image: '/images/standing forward fold.png',
+		width: '457',
+		height: '735',
 		alt: 'Stehende Vorwärtsbeuge',
 		name: 'Stehende Vorwärtsbeuge',
 		sanscritName: 'पादहस्तासन pāda-hastāsana',
@@ -221,6 +241,8 @@ export const db = [
 	{
 		id: 10,
 		image: '/images/triangle pose.png',
+		width: '667',
+		height: '775',
 		alt: 'Dreieck',
 		name: 'Dreieck',
 		sanscritName: 'त्रिकोणासन trikoṇāsana',
@@ -243,6 +265,8 @@ export const db = [
 	{
 		id: 11,
 		image: '/images/head stand.png',
+		width: '199',
+		height: '823',
 		alt: 'Kopfstand',
 		name: 'Kopfstand',
 		sanscritName: 'शीर्षासन śīrṣāsana',
@@ -256,6 +280,8 @@ export const db = [
 	{
 		id: 12,
 		image: '/images/chaturanga.png',
+		width: '711',
+		height: '173',
 		alt: 'Yoga Liegestütze',
 		name: 'Yoga Liegestütze',
 		sanscritName: 'चतुरङ्गदण्डासन catur-aṅga-daṇḍāsana',

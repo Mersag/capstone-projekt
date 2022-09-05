@@ -11,9 +11,8 @@ function CardHome({exercise}) {
 			<Image
 				src={exercise.image}
 				alt={exercise.alt}
-				width={500}
-				height={500}
-				layout="intrinsic"
+				width={exercise.width}
+				height={exercise.height}
 			></Image>
 			<h2>{exercise.name}</h2>
 			<h3>{exercise.sanscritName}</h3>
