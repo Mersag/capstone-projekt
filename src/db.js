@@ -1,16 +1,7 @@
-import BowPose from './components/images/Bow Pose.png';
-import Cobra from './components/images/Cobra.png';
-import Crow from './components/images/Crow.png';
-import Fish from './components/images/Fish.png';
-import HeadStand from './components/images/Head Stand.png';
-import PlowPose from './components/images/Plow Pose.png';
-import ShoulderStand from './components/images/Shoulder Stand.png';
-import TrianglePose from './components/images/Triangle Pose.png';
-
 export const db = [
 	{
 		id: 0,
-		image: Cobra,
+		image: '/images/cobra.png',
 		alt: 'Cobra',
 		name: 'Cobra',
 		sanscritName: 'भुजङ्गासन bhujaṅgāsana',
@@ -32,7 +23,7 @@ export const db = [
 	},
 	{
 		id: 1,
-		image: ShoulderStand,
+		image: '/images/shoulder stand.png',
 		alt: 'SchulterStand',
 		name: 'Schulterstand',
 		sanscritName: 'सर्वाङ्गासन sarvāṅgāsana',
@@ -54,7 +45,7 @@ export const db = [
 	},
 	{
 		id: 2,
-		image: Fish,
+		image: '/images/fish.png',
 		alt: 'Fisch',
 		name: 'Fisch',
 		sanscritName: 'मत्स्यासन matsyāsana',
@@ -76,7 +67,7 @@ export const db = [
 	},
 	{
 		id: 3,
-		image: PlowPose,
+		image: '/images/plow pose.png',
 		alt: 'Pflug',
 		name: 'Pflug',
 		sanscritName: 'हलासन halāsana',
@@ -98,6 +89,8 @@ export const db = [
 	},
 	{
 		id: 4,
+		image: '/images/standing forward fold.png',
+		alt: 'Vorwärtsbeuge',
 		name: 'Vorwärtsbeuge',
 		sanscritName: 'पश्चिमोत्तानासन paścimottānāsana',
 		about: 'Lege im Langsitz die Hände auf die Oberschenkel, gleite dabei immer weiter nach vorne unten, hin zu den Schienbeinen und vielleicht erreichst du ja sogar deine Füße. Lege Bauch und Brust auf die Beine, soweit du eben kommst. Wenn du nicht so flexibel bist, gehst du eben nicht so tief nach unten.Der untere Rücken bleibt dabei gerade.',
@@ -118,6 +111,7 @@ export const db = [
 	},
 	{
 		id: 5,
+		//image: '/images/.png',
 		name: 'Heuschrecke',
 		sanscritName: 'शलभासन śalabhāsana',
 		about: 'Ausgangsposition ist die Bauchlage. Bringe deine Arme vor deinem Rumpf zusammen, die Hände sind gefaltet, in Fäusten oder liegen flach auf dem Boden - unter oder neben dem Körper. Die kleinen Finger liegen dabei nebeneinander. Du solltest dich in dieser Haltung mit den Armen gut abstützen können.Mit der Einatmung baust du Körperspannung auf und hebst die Beine soweit wie möglich nach oben. Atme tief und gleichmäßig. Halte die Heuschrecke so lange wie möglich.Mit der Ausatmung legst du die Beine wieder ab und spürst in der Bauchentspannungslage der Wirkung der Asana nach.',
@@ -138,7 +132,7 @@ export const db = [
 	},
 	{
 		id: 6,
-		image: BowPose,
+		image: '/images/bowpose.png',
 		alt: 'Bogen',
 		name: 'Bogen',
 		sanscritName: 'धनुरासन dhanurāsana',
@@ -160,6 +154,7 @@ export const db = [
 	},
 	{
 		id: 7,
+		image: '/images/seated twist.png',
 		name: 'Drehsitz',
 		sanscritName: 'अर्धमत्स्येन्द्रासन ardhamatsyendrāsana',
 		about: 'Ausgehend vom Fersensitz setzt du dein Gesäß links neben der Hüfte ab, den rechten Fuß setzt du neben dem linken Knie auf und mit dem linken Arm greifst du um das rechte Knie. Hier kannst du dich noch einmal an deinem Knie aufrichten und mit der nächsten Einatmung den rechten Arm weit nach oben ausstrecken.Mit der Ausatmung den Oberkörper um die eigene Achse nach rechts drehen und die Hand auf dem Boden ablegen. Auf der hinteren Hand ist kein Gewicht. Wenn du schon stabil in der Position sitzt, lege den rechten Unterarm in den Rücken.',
@@ -180,7 +175,7 @@ export const db = [
 	},
 	{
 		id: 8,
-		image: Crow,
+		image: '/images/crow.png',
 		alt: 'Krähe',
 		name: 'Krähe',
 		sanscritName: 'मयूरासन mayūrāsana',
@@ -202,6 +197,7 @@ export const db = [
 	},
 	{
 		id: 9,
+		image: '/images/standing forward.png',
 		name: 'Stehende Vorwärtsbeuge',
 		sanscritName: 'पादहस्तासन pāda-hastāsana',
 		about: 'Ausgangsposition ist die Bergstellung (Tadasana). Von hier aus hebe mit der nächsten Einatmung die Arme weit nach oben und strecke dich mit der Ausatmung weit nach vorne unten, bis die Hände oder die Fingerspitzen auf dem Boden ankommen. Wenn dir das nicht möglich ist, kannst du auch etwas deine Knie beugen, um die Hände flach neben den Füßen abzulegen.',
@@ -222,7 +218,7 @@ export const db = [
 	},
 	{
 		id: 10,
-		image: TrianglePose,
+		image: '/images/triangle pose.png',
 		alt: 'Dreieck',
 		name: 'Dreieck',
 		sanscritName: 'त्रिकोणासन trikoṇāsana',
@@ -244,7 +240,7 @@ export const db = [
 	},
 	{
 		id: 11,
-		image: HeadStand,
+		image: '/images/head stand.png',
 		alt: 'Kopfstand',
 		name: 'Kopfstand',
 		sanscritName: 'शीर्षासन śīrṣāsana',
