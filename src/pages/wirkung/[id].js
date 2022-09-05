@@ -24,7 +24,12 @@ export default function WirkungPage() {
 				<meta key="description" name="description" content="wirkung" />
 			</Head>
 			<h1>{entry.name}</h1>
-			<Image src={entry.image} alt={entry.alt} width={50} height={50} layout=""></Image>
+			<Image
+				src={entry.image}
+				alt={entry.alt}
+				width={entry.width}
+				height={entry.height}
+			></Image>
 			<h2>Wirkung</h2>
 			<div>
 				<ul>
