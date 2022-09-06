@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
 export default function Header() {
 	return (
 		<StyledHeader>
-			<h2>My Yoga Routine</h2>
+			<h4>My Yoga Routine</h4>
 		</StyledHeader>
 	);
 }
