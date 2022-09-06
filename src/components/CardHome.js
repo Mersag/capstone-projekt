@@ -19,23 +19,22 @@ function CardHome({exercise}) {
 				></Image>
 				<h3>{exercise.sanscritName}</h3>
 				<p>{exercise.about}</p>
-				<StyledContainer>
-					<Link href={`/wirkung/${exercise.id}`}>
-						<a>
-							<StyledButton>wirkung</StyledButton>
-						</a>
-					</Link>
 
-					<StyledButton
-						disabled={routine.filter(routine => routine.id === exercise.id).length}
-						onClick={() => {
-							addRoutine(exercise);
-						}}
-						type="button"
-					>
-						Add to Routine
-					</StyledButton>
-				</StyledContainer>
+				<Link href={`/wirkung/${exercise.id}`}>
+					<a>
+						<StyledButton>wirkung</StyledButton>
+					</a>
+				</Link>
+
+				<StyledButton
+					disabled={routine.filter(routine => routine.id === exercise.id).length}
+					onClick={() => {
+						addRoutine(exercise);
+					}}
+					type="button"
+				>
+					Add to Routine
+				</StyledButton>
 			</StyledCard>
 		</StyledContainer>
 	);
@@ -60,7 +59,7 @@ const StyledContainer = styled.div`
 	justify-content: center;
 	width: 100%;
 	height: auto;
-	gap: 20px;
+	gap: 200px;
 `;
 
 const StyledCard = styled.article`

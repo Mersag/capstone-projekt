@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import {useRouter} from 'next/router';
+import styled from 'styled-components';
 
 import Layout from '../../components/Layout';
 import {db} from '../../db';
@@ -42,7 +43,7 @@ export default function WirkungPage() {
 				</ul>
 			</div>
 
-			<button
+			<StyledButton
 				disabled={routine.filter(routine => routine.id === Number(id)).length}
 				onClick={() => {
 					addRoutine(entry);
@@ -50,7 +51,19 @@ export default function WirkungPage() {
 				type="button"
 			>
 				add to Routine
-			</button>
+			</StyledButton>
 		</Layout>
 	);
 }
+
+const StyledButton = styled.button`
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid black;
+	background-color: #83c5be;
+	color: white;
+	font-weight: 600;
+	&:hover {
+		cursor: pointer;
+	}
+`;
