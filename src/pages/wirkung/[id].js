@@ -32,7 +32,7 @@ export default function WirkungPage() {
 			></Image>
 			<h2>Wirkung</h2>
 			<div>
-				<ul>
+				<ul style={{listStyle: 'none', marginLeft: -40}}>
 					{entry.wirkung.map(wirkung => (
 						<li key={wirkung.wirkung}>
 							<h3>{wirkung.wirkung}:</h3>

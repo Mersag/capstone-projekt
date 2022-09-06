@@ -8,13 +8,13 @@ function CardHome({exercise}) {
 	const addRoutine = useStore(state => state.addRoutine);
 	return (
 		<article>
+			<h2>{exercise.name}</h2>
 			<Image
 				src={exercise.image}
 				alt={exercise.alt}
 				width={exercise.width}
 				height={exercise.height}
 			></Image>
-			<h2>{exercise.name}</h2>
 			<h3>{exercise.sanscritName}</h3>
 			<p>{exercise.about}</p>
 			<Link href={`/wirkung/${exercise.id}`}>

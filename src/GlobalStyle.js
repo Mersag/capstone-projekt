@@ -35,5 +35,6 @@ export const GlobalStyle = createGlobalStyle`
 
 	main {
 		padding-bottom:50px;
+		text-align:center;
 	}
 `;
