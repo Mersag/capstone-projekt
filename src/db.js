@@ -1,6 +1,10 @@
 export const db = [
 	{
 		id: 0,
+		image: '/images/cobra.png',
+		width: '699',
+		height: '455',
+		alt: 'Cobra',
 		name: 'Cobra',
 		sanscritName: 'भुजङ्गासन bhujaṅgāsana',
 		about: 'Kobra oder auch Sphinx, ahmt die aufgerichtete Haltung einer Schlange nach. Bei dieser Yoga-Übung liegen deine Beine und deine Hüfte (in der Regel) auf dem Boden, während dein Oberkörper aufgerichtet ist.',
@@ -21,6 +25,10 @@ export const db = [
 	},
 	{
 		id: 1,
+		image: '/images/shoulder stand.png',
+		width: '367',
+		height: '805',
+		alt: 'SchulterStand',
 		name: 'Schulterstand',
 		sanscritName: 'सर्वाङ्गासन sarvāṅgāsana',
 		about: 'Ausgehend von der Rückenentspannungslage bringst du die Beine zusammen, die Arme liegen neben dem Körper mit den Handinnenflächen nach unten. Mit der Einatmung hebst du beide Beine soweit wie möglich in eine senkrechte Position nach oben. Den Rücken unterstützt du mit den Händen.',
@@ -41,6 +49,10 @@ export const db = [
 	},
 	{
 		id: 2,
+		image: '/images/fish.png',
+		width: '729',
+		height: '189',
+		alt: 'Fisch',
 		name: 'Fisch',
 		sanscritName: 'मत्स्यासन matsyāsana',
 		about: 'Dein Kinn ist auf dein Brustbein geneigt, während du dich mit Armkraft und einer Einatmung in eine Rückbeuge stemmst. Dein Gewicht lastet nun auf den Unterarmen. zuletzt lässt du deinen Kopf mit einer Ausatmung sanft in den Nacken sinken.',
@@ -61,6 +73,10 @@ export const db = [
 	},
 	{
 		id: 3,
+		image: '/images/plow pose.png',
+		width: '679',
+		height: '461',
+		alt: 'Pflug',
 		name: 'Pflug',
 		sanscritName: 'हलासन halāsana',
 		about: 'Dein Kinn ist auf dein Brustbein geneigt, während du dich mit Armkraft und einer Einatmung in eine Rückbeuge stemmst. Dein Gewicht lastet nun auf den Unterarmen. zuletzt lässt du deinen Kopf mit einer Ausatmung sanft in den Nacken sinken.',
@@ -81,7 +97,11 @@ export const db = [
 	},
 	{
 		id: 4,
-		name: 'Vorwärtsbeuge',
+		image: '/images/seated forward bend.png',
+		width: '665',
+		height: '495',
+		alt: 'Sitzende Vorwärtsbeuge',
+		name: 'Sitzende Vorwärtsbeuge',
 		sanscritName: 'पश्चिमोत्तानासन paścimottānāsana',
 		about: 'Lege im Langsitz die Hände auf die Oberschenkel, gleite dabei immer weiter nach vorne unten, hin zu den Schienbeinen und vielleicht erreichst du ja sogar deine Füße. Lege Bauch und Brust auf die Beine, soweit du eben kommst. Wenn du nicht so flexibel bist, gehst du eben nicht so tief nach unten.Der untere Rücken bleibt dabei gerade.',
 		wirkung: [
@@ -101,6 +121,10 @@ export const db = [
 	},
 	{
 		id: 5,
+		image: '/images/full locust pose.png',
+		width: '729',
+		height: '189',
+		alt: 'Heuschrecke',
 		name: 'Heuschrecke',
 		sanscritName: 'शलभासन śalabhāsana',
 		about: 'Ausgangsposition ist die Bauchlage. Bringe deine Arme vor deinem Rumpf zusammen, die Hände sind gefaltet, in Fäusten oder liegen flach auf dem Boden - unter oder neben dem Körper. Die kleinen Finger liegen dabei nebeneinander. Du solltest dich in dieser Haltung mit den Armen gut abstützen können.Mit der Einatmung baust du Körperspannung auf und hebst die Beine soweit wie möglich nach oben. Atme tief und gleichmäßig. Halte die Heuschrecke so lange wie möglich.Mit der Ausatmung legst du die Beine wieder ab und spürst in der Bauchentspannungslage der Wirkung der Asana nach.',
@@ -121,6 +145,10 @@ export const db = [
 	},
 	{
 		id: 6,
+		image: '/images/bowpose.png',
+		width: '673',
+		height: '593',
+		alt: 'Bogen',
 		name: 'Bogen',
 		sanscritName: 'धनुरासन dhanurāsana',
 		about: 'Bei dieser öffnenden Yoga-Übung Dhanurasana (Sanskrit: धनुरासन) liegst du auf dem Bauch, während deine Hände deine Fußgelenke greifen und der Brustkorb nach oben gebogen wird. Dadurch streckst du deine Wirbelsäule, entspannst und stärkst deine oberen Rückenmuskeln und deine Schultern, gleichzeitig stählst du Arme und Oberschenkel.',
@@ -141,6 +169,9 @@ export const db = [
 	},
 	{
 		id: 7,
+		image: '/images/seated twist.png',
+		width: '659',
+		height: '753',
 		name: 'Drehsitz',
 		sanscritName: 'अर्धमत्स्येन्द्रासन ardhamatsyendrāsana',
 		about: 'Ausgehend vom Fersensitz setzt du dein Gesäß links neben der Hüfte ab, den rechten Fuß setzt du neben dem linken Knie auf und mit dem linken Arm greifst du um das rechte Knie. Hier kannst du dich noch einmal an deinem Knie aufrichten und mit der nächsten Einatmung den rechten Arm weit nach oben ausstrecken.Mit der Ausatmung den Oberkörper um die eigene Achse nach rechts drehen und die Hand auf dem Boden ablegen. Auf der hinteren Hand ist kein Gewicht. Wenn du schon stabil in der Position sitzt, lege den rechten Unterarm in den Rücken.',
@@ -161,6 +192,10 @@ export const db = [
 	},
 	{
 		id: 8,
+		image: '/images/crow.png',
+		width: '687',
+		height: '631',
+		alt: 'Krähe',
 		name: 'Krähe',
 		sanscritName: 'मयूरासन mayūrāsana',
 		about: 'In der Hocke platzierst du die Hände mit gespreizten Fingern schulterbreit auf dem Boden. Dein Gesäß geht nach oben, sodass du deine Knie auf den Oberarmen ablegen kannst. Nun verlagere immer mehr Gewicht auf die Hände, komme auf die Zehenspitzen, um dann die Füße ganz vom Boden zu lösen.Um besser das Gleichgewicht zu halten, gib auch Gewicht auf die Fingerspitzen und fixiere mit dem Blick einen Punkt vor dir. Die Zehenspitzen kannst du zusammenbringen, um noch mehr Stabilität aufzubauen. Halte die Position einige Atemzüge und setze dann die Füße wieder auf dem Boden ab.',
@@ -181,6 +216,10 @@ export const db = [
 	},
 	{
 		id: 9,
+		image: '/images/standing forward fold.png',
+		width: '457',
+		height: '735',
+		alt: 'Stehende Vorwärtsbeuge',
 		name: 'Stehende Vorwärtsbeuge',
 		sanscritName: 'पादहस्तासन pāda-hastāsana',
 		about: 'Ausgangsposition ist die Bergstellung (Tadasana). Von hier aus hebe mit der nächsten Einatmung die Arme weit nach oben und strecke dich mit der Ausatmung weit nach vorne unten, bis die Hände oder die Fingerspitzen auf dem Boden ankommen. Wenn dir das nicht möglich ist, kannst du auch etwas deine Knie beugen, um die Hände flach neben den Füßen abzulegen.',
@@ -201,6 +240,10 @@ export const db = [
 	},
 	{
 		id: 10,
+		image: '/images/triangle pose.png',
+		width: '667',
+		height: '775',
+		alt: 'Dreieck',
 		name: 'Dreieck',
 		sanscritName: 'त्रिकोणासन trikoṇāsana',
 		about: 'Ausgangsposition ist eine gegrätschte Standhaltung, so dass die Knöchel unter den Handgelenken der ausgestreckten Arme sind. Die Füße sind parallel zueinander. Halte die Arme an den Seiten neben den Beinen am Körper angelegt.Atme ein, hebe den rechten Arm hoch. Atme aus und beuge den Rumpf nach links. Halte dabei den Arm am Ohr. Atme 2-3 Mal tief ein und aus. Spüre die Dehnung auf der rechten Körperseite',
@@ -221,6 +264,10 @@ export const db = [
 	},
 	{
 		id: 11,
+		image: '/images/head stand.png',
+		width: '199',
+		height: '823',
+		alt: 'Kopfstand',
 		name: 'Kopfstand',
 		sanscritName: 'शीर्षासन śīrṣāsana',
 		about: 'Verschränke die Finger und schaffe eine feste Basis über die Unterarme. Nun strecke die Beine und schiebe dein Gesäß nach oben. Der Rücken bleibt lang und die Beine sind aktiv gestreckt. Atme ein und schiebe den Kopf vor die Faust, der Oberkörper kommt parallel zum Boden, wobei die Beine gestreckt bleiben',
@@ -228,6 +275,30 @@ export const db = [
 			{wirkung: 'körperlich', text: 'harmonisierend ,Schlidrüse , Spannung lösend'},
 			{wirkung: 'energetisch', text: 'Aktivirend,öffnent'},
 			{wirkung: 'geistig', text: 'Verleiht frieden '},
+		],
+	},
+	{
+		id: 12,
+		image: '/images/chaturanga.png',
+		width: '711',
+		height: '173',
+		alt: 'Yoga Liegestütze',
+		name: 'Yoga Liegestütze',
+		sanscritName: 'चतुरङ्गदण्डासन catur-aṅga-daṇḍāsana',
+		about: 'Als Ausgangsposition bietet sich der Vierfüßlerstand an. Die Hände befinden sich dabei unter den Schultern und die Knie unter den Hüften. Löse nun langsam die Knie vom Boden und baue immer mehr Körperspannung auf, bis die Knie ganz gestreckt sind. Bauchmuskeln, Gesäß und Oberschenkel sind angespannt. Der Scheitelpunkt strebt nach vorne und die Fersen schieben nach hinten. Du kannst in dieser Haltung die gesamte Muskulatur des Körpers und auch die Beckenbodenmuskulatur gut trainieren. Die Atmung fließt trotz der Anstrengung ruhig und gleichmäßig und sollte nicht ins Stocken geraten.',
+		wirkung: [
+			{
+				wirkung: 'körperlich',
+				text: 'Der Stütz stärkt das gesamte Muskelkorsett. Auch die Tiefenmuskulatur wird beansprucht, was besonders zur Stabilisation der Wirbelsäule und der Gelenke beiträgt. Durch die starke Aktivierung entstehen auch positive Effekte auf der Ebene des Stoffwechsels und der Hormone, sodass zum Beispiel die Knochendichte positiv beeinflusst wird.',
+			},
+			{
+				wirkung: 'energetisch',
+				text: 'Der Stütz ist eine stark energetisierende Asana, die das Prana im ganzen Körper zum Fließen bringt. Angesprochen wird besonders das Muladhara Chakra.',
+			},
+			{
+				wirkung: 'geistig',
+				text: 'Chaturanga Dandasana gibt dir ein ein Gefühl von geistiger Klarheit und vertreibt Müdigkeit.',
+			},
 		],
 	},
 ];

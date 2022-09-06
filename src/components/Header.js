@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
+	position: sticky;
+	z-index: 100;
+	top: 0;
 	padding: 20px;
 	background-color: #83c5be;
 	color: white;

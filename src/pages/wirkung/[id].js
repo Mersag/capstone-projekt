@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import {useRouter} from 'next/router';
 
 import Layout from '../../components/Layout';
@@ -22,12 +23,19 @@ export default function WirkungPage() {
 				<title key="title">Wirkung</title>
 				<meta key="description" name="description" content="wirkung" />
 			</Head>
-			<h1>Wirkung</h1>
+			<h1>{entry.name}</h1>
+			<Image
+				src={entry.image}
+				alt={entry.alt}
+				width={entry.width}
+				height={entry.height}
+			></Image>
+			<h2>Wirkung</h2>
 			<div>
 				<ul>
 					{entry.wirkung.map(wirkung => (
 						<li key={wirkung.wirkung}>
-							<h2>{wirkung.wirkung}:</h2>
+							<h3>{wirkung.wirkung}:</h3>
 							{wirkung.text}
 						</li>
 					))}

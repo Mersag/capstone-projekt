@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import useStore from '../hooks/useStore';
@@ -7,6 +8,12 @@ function CardHome({exercise}) {
 	const addRoutine = useStore(state => state.addRoutine);
 	return (
 		<article>
+			<Image
+				src={exercise.image}
+				alt={exercise.alt}
+				width={exercise.width}
+				height={exercise.height}
+			></Image>
 			<h2>{exercise.name}</h2>
 			<h3>{exercise.sanscritName}</h3>
 			<p>{exercise.about}</p>
