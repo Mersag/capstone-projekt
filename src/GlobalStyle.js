@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	html {
-		font-size: 16px;
+		font-size: 13px;
 	}
 	body {
 		margin:0;
@@ -35,5 +35,6 @@ export const GlobalStyle = createGlobalStyle`
 
 	main {
 		padding-bottom:50px;
+		text-align:center;
 	}
 `;

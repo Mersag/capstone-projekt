@@ -1,7 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import {useRouter} from 'next/router';
+import styled from 'styled-components';
 
+import StyledButton from '../../components/Button/StyledButton';
+import StyledCard from '../../components/Card/StyledCard';
+import StyledContainer from '../../components/Card/StyledContainer';
 import Layout from '../../components/Layout';
 import {db} from '../../db';
 import useStore from '../../hooks/useStore';
@@ -23,34 +27,43 @@ export default function WirkungPage() {
 				<title key="title">Wirkung</title>
 				<meta key="description" name="description" content="wirkung" />
 			</Head>
-			<h1>{entry.name}</h1>
-			<Image
-				src={entry.image}
-				alt={entry.alt}
-				width={entry.width}
-				height={entry.height}
-			></Image>
-			<h2>Wirkung</h2>
-			<div>
-				<ul>
-					{entry.wirkung.map(wirkung => (
-						<li key={wirkung.wirkung}>
-							<h3>{wirkung.wirkung}:</h3>
-							{wirkung.text}
-						</li>
-					))}
-				</ul>
-			</div>
+			<h1>Wirkung</h1>
+			<StyledContainer>
+				<StyledCard>
+					<h2>{entry.name}</h2>
+					<Image
+						src={entry.image}
+						alt={entry.alt}
+						width={entry.width}
+						height={entry.height}
+					></Image>
 
-			<button
-				disabled={routine.filter(routine => routine.id === Number(id)).length}
-				onClick={() => {
-					addRoutine(entry);
-				}}
-				type="button"
-			>
-				add to Routine
-			</button>
+					<div>
+						<ul style={{listStyle: 'none', marginLeft: -40}}>
+							{entry.wirkung.map(wirkung => (
+								<li key={wirkung.wirkung}>
+									<StyledHeader>{wirkung.wirkung}</StyledHeader>
+									{wirkung.text}
+								</li>
+							))}
+						</ul>
+					</div>
+
+					<StyledButton
+						disabled={routine.filter(routine => routine.id === Number(id)).length}
+						onClick={() => {
+							addRoutine(entry);
+						}}
+						type="button"
+					>
+						ADD TO ROUTINE
+					</StyledButton>
+				</StyledCard>
+			</StyledContainer>
 		</Layout>
 	);
 }
+
+const StyledHeader = styled.h3`
+	color: #83c5be;
+`;
