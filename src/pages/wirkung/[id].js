@@ -3,6 +3,8 @@ import Image from 'next/image';
 import {useRouter} from 'next/router';
 import styled from 'styled-components';
 
+import StyledButton from '../../components/Button/StyledButton';
+import StyledContainer from '../../components/Card/StyledContainer';
 import Layout from '../../components/Layout';
 import {db} from '../../db';
 import useStore from '../../hooks/useStore';
@@ -52,7 +54,7 @@ export default function WirkungPage() {
 						}}
 						type="button"
 					>
-						add to Routine
+						ADD TO ROUTINE
 					</StyledButton>
 				</StyledCard>
 			</StyledContainer>
@@ -60,26 +62,6 @@ export default function WirkungPage() {
 	);
 }
 
-const StyledButton = styled.button`
-	margin: 10px;
-	padding: 10px;
-	border: 1px solid black;
-	background-color: #83c5be;
-	color: white;
-	font-weight: 600;
-	&:hover {
-		cursor: pointer;
-	}
-`;
-
-const StyledContainer = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: auto;
-	gap: 200px;
-`;
 const StyledCard = styled.li`
 	position: relative;
 	width: 250px;
