@@ -16,7 +16,9 @@ function CardRoutine({exercise}) {
 					width={exercise.width}
 					height={exercise.height}
 				></Image>
-				<h3>{exercise.sanscritName}</h3>
+				<StyledHeader>
+					<h3>{exercise.sanscritName}</h3>
+				</StyledHeader>
 				<p>{exercise.about}</p>
 				<StyledContainer>
 					<Link href={`/wirkung/${exercise.id}`}>
@@ -67,4 +69,7 @@ const StyledCard = styled.li`
 	background-color: var(--plainWhite);
 	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
 	list-style: none;
+`;
+const StyledHeader = styled.h3`
+	color: #83c5be;
 `;
