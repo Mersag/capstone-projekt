@@ -23,20 +23,21 @@ export default function WirkungPage() {
 
 	return (
 		<Layout>
+			<Head>
+				<title key="title">Wirkung</title>
+				<meta key="description" name="description" content="wirkung" />
+			</Head>
+			<h1>Wirkung</h1>
 			<StyledContainer>
-				<Head>
-					<title key="title">Wirkung</title>
-					<meta key="description" name="description" content="wirkung" />
-				</Head>
 				<StyledCard>
-					<h1>{entry.name}</h1>
+					<h2>{entry.name}</h2>
 					<Image
 						src={entry.image}
 						alt={entry.alt}
 						width={entry.width}
 						height={entry.height}
 					></Image>
-					<h2>Wirkung</h2>
+
 					<div>
 						<ul style={{listStyle: 'none', marginLeft: -40}}>
 							{entry.wirkung.map(wirkung => (
