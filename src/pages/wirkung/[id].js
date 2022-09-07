@@ -38,9 +38,7 @@ export default function WirkungPage() {
 						<ul style={{listStyle: 'none', marginLeft: -40}}>
 							{entry.wirkung.map(wirkung => (
 								<li key={wirkung.wirkung}>
-									<StyledHeader>
-										<h3>{wirkung.wirkung}:</h3>
-									</StyledHeader>
+									<StyledHeader>{wirkung.wirkung}</StyledHeader>
 									{wirkung.text}
 								</li>
 							))}

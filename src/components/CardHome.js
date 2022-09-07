@@ -17,9 +17,7 @@ function CardHome({exercise}) {
 					width={exercise.width}
 					height={exercise.height}
 				></Image>
-				<StyledHeader>
-					<h3>{exercise.sanscritName}</h3>
-				</StyledHeader>
+				<StyledHeader>{exercise.sanscritName}</StyledHeader>
 				<p>{exercise.about}</p>
 
 				<Link href={`/wirkung/${exercise.id}`}>
