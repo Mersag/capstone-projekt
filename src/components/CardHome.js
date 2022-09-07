@@ -62,7 +62,13 @@ const StyledContainer = styled.div`
 	gap: 200px;
 `;
 
-const StyledCard = styled.article`
-	width: 80vw;
-	height: auto;
+const StyledCard = styled.li`
+	position: relative;
+	width: 250px;
+	height: 132%;
+	margin-bottom: 60px;
+	border-radius: 20px;
+	background-color: var(--plainWhite);
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+	list-style: none;
 `;

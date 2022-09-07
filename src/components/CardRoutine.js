@@ -7,31 +7,33 @@ import useStore from '../hooks/useStore';
 function CardRoutine({exercise}) {
 	const deleteRoutine = useStore(state => state.deleteRoutine);
 	return (
-		<article>
-			<h2>{exercise.name}</h2>
-			<Image
-				src={exercise.image}
-				alt={exercise.alt}
-				width={exercise.width}
-				height={exercise.height}
-			></Image>
-			<h3>{exercise.sanscritName}</h3>
-			<p>{exercise.about}</p>
-			<StyledContainer>
-				<Link href={`/wirkung/${exercise.id}`}>
-					<a>
-						<StyledButton>wirkung</StyledButton>
-					</a>
-				</Link>
-				<StyledButton
-					onClick={() => {
-						deleteRoutine(exercise.id);
-					}}
-				>
-					delete
-				</StyledButton>
-			</StyledContainer>
-		</article>
+		<StyledContainer>
+			<StyledCard>
+				<h2>{exercise.name}</h2>
+				<Image
+					src={exercise.image}
+					alt={exercise.alt}
+					width={exercise.width}
+					height={exercise.height}
+				></Image>
+				<h3>{exercise.sanscritName}</h3>
+				<p>{exercise.about}</p>
+				<StyledContainer>
+					<Link href={`/wirkung/${exercise.id}`}>
+						<a>
+							<StyledButton>wirkung</StyledButton>
+						</a>
+					</Link>
+					<StyledButton
+						onClick={() => {
+							deleteRoutine(exercise.id);
+						}}
+					>
+						delete
+					</StyledButton>
+				</StyledContainer>
+			</StyledCard>
+		</StyledContainer>
 	);
 }
 
@@ -55,4 +57,14 @@ const StyledContainer = styled.div`
 	justify-content: center;
 	width: 100%;
 	height: auto;
+`;
+const StyledCard = styled.li`
+	position: relative;
+	width: 250px;
+	height: 132%;
+	margin-bottom: 60px;
+	border-radius: 20px;
+	background-color: var(--plainWhite);
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+	list-style: none;
 `;
