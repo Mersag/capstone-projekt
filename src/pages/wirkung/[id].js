@@ -4,6 +4,7 @@ import {useRouter} from 'next/router';
 import styled from 'styled-components';
 
 import StyledButton from '../../components/Button/StyledButton';
+import StyledCard from '../../components/Card/StyledCard';
 import StyledContainer from '../../components/Card/StyledContainer';
 import Layout from '../../components/Layout';
 import {db} from '../../db';
@@ -62,17 +63,6 @@ export default function WirkungPage() {
 	);
 }
 
-const StyledCard = styled.li`
-	position: relative;
-	width: 250px;
-	height: 132%;
-	margin-bottom: 60px;
-	padding: 15px;
-	border-radius: 20px;
-	background-color: var(--plainWhite);
-	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
-	list-style: none;
-`;
 const StyledHeader = styled.h3`
 	color: #83c5be;
 `;
